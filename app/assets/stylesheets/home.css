@@ -33,3 +33,67 @@ div.header {
   font-size: 1.2em;
   margin-left: 20px;
 }
+.images {
+  position: absolute;
+  left: 16%;
+  right: 1%;
+  height: 100%;
+  top: 1%;
+  overflow-y: scroll;
+}
+.user-form {
+  background: #303030;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.input-label {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #fff;
+}
+
+.input-field,
+.input-file {
+  width: 90%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  margin-top: 4px;
+}
+
+.input-file {
+  padding: 6px 0;
+  text-align: center;
+  background-color: #202020;
+  color: #fff;
+  width: 100%;
+}
+
+.submit-btn {
+  background: rgb(225, 59, 247);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #256bb5;
+}

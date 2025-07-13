@@ -13,7 +13,24 @@
         <%= link_to  "Messages", "paginas/messages", class: "messages" %>
     </div>
     
-    
-    <p>Pictures</p>
+    <div class="uploads">
+
+    </div>
+    <div class="images">
+  <%= simple_form_for @user, html: { class: "user-form", multipart: true } do |f| %>
+    <div class="form-group">
+      <%= f.input :username, input_html: { class: "input-field" }, label_html: { class: "input-label" } %>
+    </div>
+    <div class="form-group">
+      <%= f.input :password, input_html: { class: "input-field" }, label_html: { class: "input-label" } %>
+    </div>
+    <div class="form-group">
+      <%= f.input :image, as: :file, label: "Image", input_html: { class: "input-file" }, label_html: { class: "input-label" } %>
+    </div>
+    <div class="form-group">
+      <%= f.button :submit, "Salvar", class: "submit-btn" %>
+    </div>
+  <% end %>
+</div>
 </body>
 </html>
